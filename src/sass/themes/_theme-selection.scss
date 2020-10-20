@@ -1,0 +1,20 @@
+@import 'themes/dark-mode';
+@import 'themes/light-mode';
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body { 
+    @include dark-mode-styles;
+  }
+
+  /* Override dark mode with light mode styles if the user decides to swap */
+  body.light-mode {
+    @include light-mode-styles
+  }
+}
+
+/* Dark theme colors */
+body.dark-mode {
+  @include dark-mode-styles;
+}

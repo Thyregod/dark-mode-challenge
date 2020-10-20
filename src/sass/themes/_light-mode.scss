@@ -1,0 +1,71 @@
+@mixin light-mode-styles {
+  background: initial;
+
+  p {
+    color: #757763;
+    opacity: initial;
+  }
+
+  .morningscore-avatar {
+    background-color: #3498DB;
+    background-image: url('../img/avatar.svg');
+  }
+
+  .header {
+    background: linear-gradient(60deg,#3498db,#00e5d0);
+  }
+
+  .title {
+    color: #fff;
+  }
+
+  .subtitle {
+    color: initial;
+  }
+
+  .button {
+    background-color: #fff;
+  }
+
+  .is-primary {
+    background-color: #3498db;
+    color: #fff;
+  }
+
+  .is-primary:hover,
+  .is-primary:focus {
+    background-color: #2993d9;
+    opacity: initial;
+    color: #fff;
+  }
+
+  .is-link {
+    background-color: initial;
+    color: initial;
+  }
+
+  .is-link:hover,
+  .is-link:focus {
+    background-color: initial;
+    opacity: initial;
+    color: initial;
+  }
+
+  input {
+    background: #fff;
+    color: #363636;
+
+    &::placeholder {
+      color: #363636;
+      opacity: 30%;
+    }
+
+    &:hover {
+      border-color: #d0d1cd
+    }
+
+    &:focus {
+      border-color: #3498db
+    }
+  }
+}
