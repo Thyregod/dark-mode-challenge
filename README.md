@@ -1,44 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Help SPACEMAN join the dark side (theme switcher)
+### Coding Challenge for [Morningscore](https://morningscore.io)
+- Help our mascot, SPACEMAN, join the dark side by completing this challenge! This is part of our job screening process, but anyone willing to take on the challenge is very welcome to send the results our way (send to job@morningscore.io). See instructions below.
+### Difficulty: Medium | Time required: ~ 30 minutes
+![spaceman](https://morningscore.io/wp-content/uploads/2020/07/dark-side-150x150.png)
 
-## Available Scripts
+# Requirements
+- Add dark-mode switching functionality to the *existing* dark-mode button found in the ThemeSwitcher component
+  - Utilise the *existing* dark-mode scss file by adding a `dark-mode` class to a parent `html` element of the App component
+- When in Dark mode:
+  - The button icon should be `faSun`
+  - The button icon colour should be `(#FFA500)`. You can use the `color` prop on the `Icon` component.
+# Think about
+- How to prevent unnecessary re-renders.
+- How to implement dark mode in a bigger application. Would your solution work for this?
+- How to make the theme selection persistent for the user.
+- How to showcase your React skills and knowledge with this relatively simple challenge. 
 
-In the project directory, you can run:
+![screenshot-light](https://morningscore.io/wp-content/uploads/2020/07/laptop1.png)
+![screenshot-dark](https://morningscore.io/wp-content/uploads/2020/07/laptop-1.png)
 
-### `npm start`
+# Getting started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+npm i
+npm start
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This package includes scripts and configuration used by [Create React App](https://github.com/facebook/create-react-app).
+Please refer to its documentation:
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Getting Started](https://facebook.github.io/create-react-app/docs/getting-started) – How to create a new app.
+- [User Guide](https://facebook.github.io/create-react-app/) – How to develop apps bootstrapped with Create React App.
